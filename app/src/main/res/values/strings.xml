@@ -1,0 +1,27 @@
+<resources>
+    <!-- App details -->
+    <string name="app_name">ShopApp</string>
+
+    <!-- Content Description -->
+    <string name="product_image_desc">ProductImage</string>
+    <string name="product_image">ShopImage</string>
+    <string name="str_test_date">12/06/2018</string>
+
+    <!-- Menu -->
+    <string name="shr_filter_title">Filter</string>
+    <string name="shr_search_title">Search</string>
+
+    <!-- Empty -->
+    <string name="no_products">No Products</string>
+
+    <!-- backdrop menu labels -->
+    <string name="shr_featured_label">Featured</string>
+    <string name="shr_apartment_label">Apartment</string>
+    <string name="shr_accessories_label">Accessories</string>
+    <string name="shr_shoes_label">Shoes</string>
+    <string name="shr_tops_label">Tops</string>
+    <string name="shr_bottoms_label">Bottoms</string>
+    <string name="shr_dresses_label">Dresses</string>
+    <string name="shr_account_label">My Account</string>
+    <string name="full_screen_expanded_image">full screen expanded image</string>
+</resources>

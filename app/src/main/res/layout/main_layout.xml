@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apherio.shopapp.ui.activity.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+
+
+    <!-- Progress and empty views -->
+    <com.apherio.shopapp.widget.CompleteRecyclerView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="true"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        tools:listitem="@layout/row_product_item" />
+
+    <include
+        layout="@layout/progress_layout"
+        tools:visibility="invisible" />
+
+    <include
+        layout="@layout/empty_layout"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/full_screen_expanded_image"
+        android:visibility="invisible" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_elevation"
+    android:layout_marginEnd="@dimen/card_margin"
+    android:layout_marginLeft="@dimen/card_margin"
+    android:layout_marginRight="@dimen/card_margin"
+    android:layout_marginStart="@dimen/card_margin"
+    android:layout_marginTop="@dimen/normal_padding"
+    app:cardElevation="@dimen/card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_list_item">
+
+        <!-- Product block -->
+        <RelativeLayout
+            android:id="@+id/relativeItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="180sp">
+
+            <ImageView
+                android:id="@+id/ivProductimage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_size"
+                android:contentDescription="@string/product_image"
+                android:scaleType="centerCrop"
+                android:transitionName="simple_activity_transition"
+                tools:src="@drawable/img_test_one" />
+
+            <TextView
+                android:id="@+id/tvProductBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_transparent"
+                android:maxLines="1"
+                android:padding="@dimen/normal_padding"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                tools:text="APPLE" />
+
+        </RelativeLayout>
+
+        <!-- PRODUCT Title -->
+        <TextView
+            android:id="@+id/tvProductname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeItemImage"
+            android:maxLines="2"
+            android:padding="@dimen/normal_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textview_size_normal"
+            tools:text="MACBOOK PRO RETINA 15 INC" />
+
+        <!-- PRODUCT SOURCE Price -->
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProductname"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:layout_marginStart="30sp"
+            android:background="@drawable/striketext"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textColor="@color/color_transparent"
+            android:textSize="@dimen/textview_size_small"
+            android:visibility="visible"
+            tools:text="500" />
+
+        <!-- Current Price -->
+        <TextView
+            android:id="@+id/tvProductCurrentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvProductPrice"
+            android:layout_below="@+id/tvProductname"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:layout_marginStart="50sp"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/textview_size_small"
+            android:visibility="visible"
+            tools:text="2200" />
+        <!-- Symbol  Price -->
+        <TextView
+            android:id="@+id/tvProductCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvProductCurrentPrice"
+            android:layout_below="@+id/tvProductname"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:layout_marginStart="40sp"
+            android:maxLines="2"
+            android:textAllCaps="true"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/textview_size_small"
+            tools:text="$" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
